@@ -14,4 +14,5 @@ Exercícios práticos de JavaScript para fixar conceitos fundamentais da linguag
 | `exercicio06.js` | Integração de conceitos, funções com validações, lógica |
 | `exercicio07.js` | Objetos, destructuring, spread, `Object.entries`, `map`, `filter`, `reduce` |
 | `exercicio09.js` | Closures (saudação, acumulador, validador), memoização, escopo `var` vs `let` |
+| `exercicio10.js` | Promises, `async/await`, `Promise.all`, retry com tentativas |
 | `exercicioRevisao.js` | Revisão: `map`, `filter`, `reduce`, encadeamento de métodos |
