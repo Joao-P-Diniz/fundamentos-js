@@ -16,3 +16,4 @@ Exercícios práticos de JavaScript para fixar conceitos fundamentais da linguag
 | `exercicio09.js` | Closures (saudação, acumulador, validador), memoização, escopo `var` vs `let` |
 | `exercicio10.js` | Promises, `async/await`, `Promise.all`, retry com tentativas |
 | `exercicioRevisao.js` | Revisão: `map`, `filter`, `reduce`, encadeamento de métodos |
+| `exercicio11/` | Projeto modular com ES Modules, validações, formatação e operações matemáticas |

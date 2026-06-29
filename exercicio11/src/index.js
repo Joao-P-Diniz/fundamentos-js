@@ -1,4 +1,5 @@
-import { somar, validarEmail, formatarMoeda } from "./utils/index.js";
+import criarUsuario from "./services/usuarios.js";
+import { multiplicar, validarEmail, formatarMoeda } from "./utils/index.js";
 
 const user1 = criarUsuario("João","joao@email.com",29);
 const user2 = criarUsuario("Maria","maria@email.com",24);
