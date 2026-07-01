@@ -1,0 +1,16 @@
+.container {
+  width: 800px;
+  padding: 40px;
+  border: 2px solid black;
+}
+
+#titulo {
+  color: red;
+}
+
+.titulo {
+  color: blue;
+}
+/* 
+Resposta : red, porque o id tem o peso maior que a class, apagaria o #titulo do css.
+*/
