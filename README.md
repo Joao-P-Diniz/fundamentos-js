@@ -17,7 +17,7 @@ cd exercicio11
 node src/index.js
 ```
 
-Os arquivos HTML do `exercicio13/` podem ser abertos diretamente no navegador.
+Os arquivos HTML do `exercicio13/` e CSS do `exercicio14/` podem ser abertos diretamente no navegador.
 
 ## Estrutura do projeto
 
@@ -48,12 +48,17 @@ fundamentos-js/
 │       ├── index.js                # entrada principal
 │       └── services/
 │           └── apiServices.js      # fetch: CRUD de usuários e posts
-└── exercicio13/            # Páginas HTML
-    ├── curriculo.html      # currículo pessoal
-    ├── portfolio.html      # portfólio com projetos
-    ├── artigo.html         # blog tech: artigo sobre HTML
-    ├── formulario.html     # formulário de contato
-    └── exercicio5.html     # página com comentários sobre boas práticas HTML
+├── exercicio13/            # Páginas HTML
+│   ├── curriculo.html      # currículo pessoal
+│   ├── portfolio.html      # portfólio com projetos
+│   ├── artigo.html         # blog tech: artigo sobre HTML
+│   ├── formulario.html     # formulário de contato
+│   └── exercicio5.html     # página com comentários sobre boas práticas HTML
+└── exercicio14/            # Folhas de estilo CSS
+    ├── curriculo.css       # estilos do currículo
+    ├── portfolio.css       # estilos do portfólio
+    ├── formulario.css      # estilos do formulário
+    └── exercicio-problema.css # estilos do exercício-problema
 ```
 
 ## Conteúdo detalhado
@@ -100,3 +105,12 @@ Consumo da API REST pública [JSONPlaceholder](https://jsonplaceholder.typicode.
 | `artigo.html` | Blog tech com artigo sobre como criar uma página HTML |
 | `formulario.html` | Formulário de dados pessoais (nome, email, idade, cargo, mensagem) |
 | `exercicio5.html` | Página com comentários sobre boas práticas de HTML semântico e acessibilidade |
+
+### Folhas de estilo — `exercicio14/`
+
+| Arquivo | Descrição |
+|---|---|
+| `curriculo.css` | Estilos do currículo pessoal |
+| `portfolio.css` | Estilos do portfólio |
+| `formulario.css` | Estilos do formulário de contato |
+| `exercicio-problema.css` | Estilos do exercício-problema |
