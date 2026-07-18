@@ -17,7 +17,7 @@ cd exercicio11
 node src/index.js
 ```
 
-Os arquivos HTML do `exercicio13/` e CSS do `exercicio14/` podem ser abertos diretamente no navegador.
+Os arquivos HTML/CSS do `exercicio13/` e `exercicio15/` podem ser abertos diretamente no navegador.
 
 ## Estrutura do projeto
 
@@ -34,6 +34,7 @@ fundamentos-js/
 ├── exercicio10.js          # Promises, async/await
 ├── exercicioRevisao.js     # map, filter, reduce
 ├── exercicio11/            # Projeto modular (ES Modules)
+│   ├── package.json
 │   └── src/
 │       ├── index.js                # entrada principal
 │       ├── services/
@@ -44,21 +45,33 @@ fundamentos-js/
 │           ├── validators.js       # validação de email, senha, idade
 │           └── formatters.js       # formatação de moeda, data, nome
 ├── exercicio12/            # Consumo de API REST (JSONPlaceholder)
+│   ├── package.json
 │   └── src/
 │       ├── index.js                # entrada principal
 │       └── services/
 │           └── apiServices.js      # fetch: CRUD de usuários e posts
-├── exercicio13/            # Páginas HTML
-│   ├── curriculo.html      # currículo pessoal
-│   ├── portfolio.html      # portfólio com projetos
+├── exercicio13/            # Páginas HTML + CSS
 │   ├── artigo.html         # blog tech: artigo sobre HTML
+│   ├── curriculo.html      # currículo pessoal
+│   ├── curriculo.css       # estilos do currículo
+│   ├── portfolio.html      # portfólio com projetos
+│   ├── portfolio.css       # estilos do portfólio
 │   ├── formulario.html     # formulário de contato
-│   └── exercicio5.html     # página com comentários sobre boas práticas HTML
-└── exercicio14/            # Folhas de estilo CSS
-    ├── curriculo.css       # estilos do currículo
-    ├── portfolio.css       # estilos do portfólio
-    ├── formulario.css      # estilos do formulário
-    └── exercicio-problema.css # estilos do exercício-problema
+│   ├── formulario.css      # estilos do formulário
+│   ├── exercicio5.html     # página com comentários sobre boas práticas HTML
+│   ├── exercicio-problema.html # exercício de CSS (id vs class)
+│   └── exercicio-problema.css  # estilos do exercício-problema
+└── exercicio15/            # Layouts CSS com Flexbox
+    ├── navbar.html         # barra de navegação
+    ├── navbar.css
+    ├── layout.html         # layout com sidebar
+    ├── layout.css
+    ├── cards.html          # grid de cards
+    ├── cards.css
+    ├── centralizar.html    # card centralizado
+    ├── centralizar.css
+    ├── pricing.html        # planos de preços
+    └── pricing.css
 ```
 
 ## Conteúdo detalhado
@@ -96,21 +109,23 @@ Consumo da API REST pública [JSONPlaceholder](https://jsonplaceholder.typicode.
 - `criarPost` (POST)
 - Uso de `Promise.all` para paralelismo
 
-### Páginas HTML — `exercicio13/`
+### Páginas HTML + CSS — `exercicio13/`
 
 | Arquivo | Descrição |
 |---|---|
-| `curriculo.html` | Currículo pessoal com habilidades, formação e contato |
-| `portfolio.html` | Portfólio com seção de projetos e formulário de contato |
+| `curriculo.html` + `curriculo.css` | Currículo pessoal com habilidades, formação e contato |
+| `portfolio.html` + `portfolio.css` | Portfólio com seção de projetos e formulário de contato |
 | `artigo.html` | Blog tech com artigo sobre como criar uma página HTML |
-| `formulario.html` | Formulário de dados pessoais (nome, email, idade, cargo, mensagem) |
+| `formulario.html` + `formulario.css` | Formulário de dados pessoais (nome, email, idade, cargo, mensagem) |
 | `exercicio5.html` | Página com comentários sobre boas práticas de HTML semântico e acessibilidade |
+| `exercicio-problema.html` + `exercicio-problema.css` | Exercício sobre especificidade CSS (id vs class) |
 
-### Folhas de estilo — `exercicio14/`
+### Layouts CSS com Flexbox — `exercicio15/`
 
 | Arquivo | Descrição |
 |---|---|
-| `curriculo.css` | Estilos do currículo pessoal |
-| `portfolio.css` | Estilos do portfólio |
-| `formulario.css` | Estilos do formulário de contato |
-| `exercicio-problema.css` | Estilos do exercício-problema |
+| `navbar.html` + `navbar.css` | Barra de navegação com Flexbox |
+| `layout.html` + `layout.css` | Layout com navbar, conteúdo principal e sidebar |
+| `cards.html` + `cards.css` | Grid responsiva de cards com hover |
+| `centralizar.html` + `centralizar.css` | Card centralizado na tela com gradiente |
+| `pricing.html` + `pricing.css` | Página de planos de preços com CSS variables e responsividade |
