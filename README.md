@@ -17,7 +17,7 @@ cd exercicio11
 node src/index.js
 ```
 
-Os arquivos HTML/CSS do `exercicio13/` e `exercicio15/` podem ser abertos diretamente no navegador.
+Os arquivos HTML/CSS do `exercicio13/`, `exercicio15/`, `exercicio16/` e `devforge/` podem ser abertos diretamente no navegador.
 
 ## Estrutura do projeto
 
@@ -61,17 +61,36 @@ fundamentos-js/
 │   ├── exercicio5.html     # página com comentários sobre boas práticas HTML
 │   ├── exercicio-problema.html # exercício de CSS (id vs class)
 │   └── exercicio-problema.css  # estilos do exercício-problema
-└── exercicio15/            # Layouts CSS com Flexbox
-    ├── navbar.html         # barra de navegação
-    ├── navbar.css
-    ├── layout.html         # layout com sidebar
-    ├── layout.css
-    ├── cards.html          # grid de cards
-    ├── cards.css
-    ├── centralizar.html    # card centralizado
-    ├── centralizar.css
-    ├── pricing.html        # planos de preços
-    └── pricing.css
+├── exercicio15/            # Layouts CSS com Flexbox
+│   ├── navbar.html         # barra de navegação
+│   ├── navbar.css
+│   ├── layout.html         # layout com sidebar
+│   ├── layout.css
+│   ├── cards.html          # grid de cards
+│   ├── cards.css
+│   ├── centralizar.html    # card centralizado
+│   ├── centralizar.css
+│   ├── pricing.html        # planos de preços
+│   └── pricing.css
+├── exercicio16/            # Layouts CSS com Grid
+│   ├── dashboard.html      # dashboard com grid areas
+│   ├── dashboard.css
+│   ├── galeria.html        # galeria de imagens responsiva
+│   ├── galeria.css
+│   ├── grade.html          # grade 3x4 com gradientes
+│   ├── grade.css
+│   ├── layout-areas.html   # layout com header/sidebar/main/footer
+│   ├── layout-areas.css
+│   ├── revista.html        # layout de revista/magazine
+│   └── revista.css
+└── devforge/               # Landing page institucional (projeto final)
+    ├── index.html
+    ├── css/
+    │   └── style.css
+    └── assets/
+        ├── DF.png
+        ├── DevForge.png
+        └── DevForgeOriginal.png
 ```
 
 ## Conteúdo detalhado
@@ -129,3 +148,24 @@ Consumo da API REST pública [JSONPlaceholder](https://jsonplaceholder.typicode.
 | `cards.html` + `cards.css` | Grid responsiva de cards com hover |
 | `centralizar.html` + `centralizar.css` | Card centralizado na tela com gradiente |
 | `pricing.html` + `pricing.css` | Página de planos de preços com CSS variables e responsividade |
+
+### Layouts CSS com Grid — `exercicio16/`
+
+| Arquivo | Descrição |
+|---|---|
+| `dashboard.html` + `dashboard.css` | Dashboard com `grid-template-areas` (nav, sidebar, cards, gráfico, tabela) |
+| `galeria.html` + `galeria.css` | Galeria de imagens responsiva com `grid-template-columns: repeat(auto-fill, minmax(...))` |
+| `grade.html` + `grade.css` | Grade 3x4 com 12 cards coloridos usando CSS variables para gradientes |
+| `layout-areas.html` + `layout-areas.css` | Layout completo com `grid-template-areas` (header, sidebar, main, footer) |
+| `revista.html` + `revista.css` | Layout de magazine com card principal em destaque (`grid-column: span 2`) |
+
+### Landing Page — `devforge/`
+
+Projeto completo de landing page institucional para a empresa fictícia DevForge.
+
+- **HTML5 semântico** com seções: hero, serviços, sobre, depoimentos, contato
+- **CSS3 avançado**: variáveis (`:root`), flexbox, grid, animações (`@keyframes`), `backdrop-filter`, `::before`/`::after`
+- **JavaScript vanilla**: menu hamburger mobile, sombra no header ao rolar
+- **Responsivo**: breakpoints em 992px, 768px e 480px
+- **Google Fonts**: Inter
+- **Assets**: logo e ícones em PNG
