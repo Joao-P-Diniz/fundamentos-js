@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:Arial, Helvetica, sans-serif;
+    background:#f4f6f9;
+    padding:20px;
+}
+.dashboard{
+    display: grid;
+     grid-template-columns:220px repeat(3,1fr);
+    grid-template-rows:70px 220px 250px;
+    gap:20px;
+    grid-template-areas:
+        "nav nav nav nav"
+        "sidebar cards cards cards"
+        "sidebar grafico grafico tabela";
+    min-height:100vh;
+}
+.dashboard > *{
+    border-radius:12px;
+    padding:20px;
+    color:#2c3e50;
+    font-weight:bold;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+.nav{
+    grid-area: nav;
+    background:#dbeafe;
+}
+.sidebar{
+    grid-area: sidebar;
+     background:#d1fae5;
+}
+.cards{
+    grid-area: cards;
+    background:#fef3c7;
+}
+.grafico{
+    grid-area: grafico;
+     background:#fde2e4;
+}
+.tabela{
+    grid-area: tabela;
+    background:#e9d5ff;
+}

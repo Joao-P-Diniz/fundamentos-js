@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: monospace;
+    background: linear-gradient(135deg, #101010, #C5C5C5, #F1F1F1);
+}
+h1{
+    text-align: center;
+    padding: 32px 12px;
+    color: cornsilk;
+    background: linear-gradient(135deg,#0f0f0f,#1a1a1a,#6d28d9);
+    margin:10px auto;
+    border-radius: 8px;
+    box-shadow: 0 3px 5px black;
+}
+.galeria{
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+}
+.card{
+    margin: 20px auto;
+    width:250px;
+    height:250px;
+    border:2px solid black;
+    border-radius: 8px;
+    background-color: cornsilk;
+    box-shadow: 0 3px 4px black;
+}
+.card img{
+    width:100%;
+    border-radius: 8px 8px 0 0 ;
+    object-fit: contain;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform:scaleY(1.2)
+}
+.card h2{
+    text-align:center;
+}

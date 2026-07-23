@@ -1,0 +1,78 @@
+:root {
+  --gradient-1: linear-gradient(135deg, #6C63FF 0%, #A855F7 100%);  
+  --gradient-2: linear-gradient(135deg, #00C9A7 0%, #92FE9D 100%);
+  --gradient-3: linear-gradient(135deg, #FF6B6B 0%, #FFE66D 100%);
+  --gradient-4: linear-gradient(135deg, #4D96FF 0%, #6BCBFF 100%);
+  --gradient-5: linear-gradient(135deg, #FF8A00 0%, #E52E71 100%);
+  --gradient-6: linear-gradient(135deg, #0F2027 0%, #2C5364 100%);
+  --gradient-7: linear-gradient(135deg, #8E2DE2 0%, #4A00E0 100%);
+  --gradient-8: linear-gradient(135deg, #11998E 0%, #38EF7D 100%);
+  --gradient-9: linear-gradient(135deg, #FC466B 0%, #3F5EFB 100%);
+  --gradient-10: linear-gradient(135deg, #F7971E 0%, #FFD200 100%);
+  --gradient-11: linear-gradient(135deg, #141E30 0%, #243B55 100%);
+  --gradient-12: linear-gradient(135deg, #FF512F 0%, #DD2476 100%);
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    width: auto;
+    height: 100vh;
+    gap:16px;
+    padding:10px;
+    background-color: #C1C1C1;
+}
+.card{
+    padding: 25px 25px;
+    border:1px solid black;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px black;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    font-family: monospace;
+    transition: 0.3s ease;
+}
+.card:hover{
+    transform: scaleY(1.1);
+}
+.one{
+    background:var(--gradient-1);
+}
+.two{
+    background:var(--gradient-2);
+}
+.three{
+    background:var(--gradient-3);
+}
+.four{
+    background:var(--gradient-4);
+}
+.five{
+    background:var(--gradient-5);
+}
+.six{
+    background:var(--gradient-6);
+}
+.seven{
+    background:var(--gradient-7);
+}
+.eight{
+    background:var(--gradient-8);
+}
+.nine{
+    background:var(--gradient-9);
+}
+.ten{
+    background:var(--gradient-10);
+}
+.eleven{
+    background:var(--gradient-11);
+}
+.twelve{
+    background:var(--gradient-12);
+}
