@@ -17,7 +17,7 @@ cd exercicio11
 node src/index.js
 ```
 
-Os arquivos HTML/CSS do `exercicio13/`, `exercicio15/`, `exercicio16/` e `devforge/` podem ser abertos diretamente no navegador.
+Os arquivos HTML/CSS do `exercicio13/`, `exercicio15/`, `exercicio16/`, `exercicio17/` e `devforge/` podem ser abertos diretamente no navegador.
 
 ## Estrutura do projeto
 
@@ -83,6 +83,15 @@ fundamentos-js/
 │   ├── layout-areas.css
 │   ├── revista.html        # layout de revista/magazine
 │   └── revista.css
+├── exercicio17/            # Mobile First e responsividade
+│   ├── cards-mobile-first.html   # cards refatorados mobile-first
+│   ├── cards-mobile-first.css
+│   ├── navbar-responsiva.html    # navbar que esconde links no mobile
+│   ├── navbar-responsiva.css
+│   ├── layout-responsivo.html    # layout header/conteudo/sidebar
+│   ├── layout-responsivo.css
+│   ├── tipografia.html           # tipografia fluida com clamp()
+│   └── tipografia.css
 └── devforge/               # Landing page institucional (projeto final)
     ├── index.html
     ├── css/
@@ -159,6 +168,15 @@ Consumo da API REST pública [JSONPlaceholder](https://jsonplaceholder.typicode.
 | `layout-areas.html` + `layout-areas.css` | Layout completo com `grid-template-areas` (header, sidebar, main, footer) |
 | `revista.html` + `revista.css` | Layout de magazine com card principal em destaque (`grid-column: span 2`) |
 
+### Mobile First e Responsividade — `exercicio17/`
+
+| Arquivo | Descrição |
+|---|---|
+| `cards-mobile-first.html` + `.css` | Cards refatorados com Mobile First: 1 coluna (mobile), 2 (768px+), 4 (1024px+) |
+| `navbar-responsiva.html` + `.css` | Navbar com links escondidos no mobile, visíveis a partir de 768px |
+| `layout-responsivo.html` + `.css` | Layout com header, conteúdo e sidebar: coluna única → duas colunas |
+| `tipografia.html` + `.css` | Tipografia fluida com `clamp()` em h1, h2 e p |
+
 ### Landing Page — `devforge/`
 
 Projeto completo de landing page institucional para a empresa fictícia DevForge.
@@ -166,6 +184,6 @@ Projeto completo de landing page institucional para a empresa fictícia DevForge
 - **HTML5 semântico** com seções: hero, serviços, sobre, depoimentos, contato
 - **CSS3 avançado**: variáveis (`:root`), flexbox, grid, animações (`@keyframes`), `backdrop-filter`, `::before`/`::after`
 - **JavaScript vanilla**: menu hamburger mobile, sombra no header ao rolar
-- **Responsivo**: breakpoints em 992px, 768px e 480px
+- **Responsivo**: abordagem Mobile First com breakpoints em 768px e 1024px
 - **Google Fonts**: Inter
 - **Assets**: logo e ícones em PNG
