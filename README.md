@@ -17,7 +17,7 @@ cd exercicio11
 node src/index.js
 ```
 
-Os arquivos HTML/CSS do `exercicio13/`, `exercicio15/`, `exercicio16/`, `exercicio17/` e `devforge/` podem ser abertos diretamente no navegador.
+Os arquivos HTML/CSS do `exercicio13/`, `exercicio15/`, `exercicio16/`, `exercicio17/`, `exercicio18/` e `devforge/` podem ser abertos diretamente no navegador.
 
 ## Estrutura do projeto
 
@@ -92,6 +92,18 @@ fundamentos-js/
 │   ├── layout-responsivo.css
 │   ├── tipografia.html           # tipografia fluida com clamp()
 │   └── tipografia.css
+├── exercicio18/            # Manipulação do DOM com JavaScript
+│   ├── atv01.html          # seleção e leitura de elementos
+│   ├── atv01.js
+│   ├── atv02.html          # modificação de conteúdo do card
+│   ├── atv02.css
+│   ├── atv02.js
+│   ├── atv03.html          # criação dinâmica de elementos
+│   ├── atv03.js
+│   ├── atv04.html          # manipulação de classes (add/remove/toggle)
+│   ├── atv04.js
+│   ├── atv05.html          # lista de tarefas dinâmica
+│   └── atv05.js
 └── devforge/               # Landing page institucional (projeto final)
     ├── index.html
     ├── css/
@@ -176,6 +188,18 @@ Consumo da API REST pública [JSONPlaceholder](https://jsonplaceholder.typicode.
 | `navbar-responsiva.html` + `.css` | Navbar com links escondidos no mobile, visíveis a partir de 768px |
 | `layout-responsivo.html` + `.css` | Layout com header, conteúdo e sidebar: coluna única → duas colunas |
 | `tipografia.html` + `.css` | Tipografia fluida com `clamp()` em h1, h2 e p |
+
+### Manipulação do DOM — `exercicio18/`
+
+Atividades práticas de manipulação do DOM com JavaScript vanilla.
+
+| Arquivo | Descrição |
+|---|---|
+| `atv01.html` + `atv01.js` | Seleção e leitura de elementos (`querySelector`, `querySelectorAll`, `textContent`) |
+| `atv02.html` + `atv02.js` | Modificação de conteúdo: título, texto e imagem do card + classe `destaque` com CSS |
+| `atv03.html` + `atv03.js` | Criação dinâmica de elementos com `createElement` e `appendChild` |
+| `atv04.html` + `atv04.js` | Manipulação de classes: `add`, `remove`, `toggle`, `contains` |
+| `atv05.html` + `atv05.js` | Desafio: lista de tarefas dinâmica com botão para remover itens |
 
 ### Landing Page — `devforge/`
 
