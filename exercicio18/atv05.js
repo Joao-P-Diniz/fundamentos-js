@@ -2,22 +2,22 @@ function adicionarTarefa(){
     const tarefa = document.querySelector("#tarefa")
     const lista = document.querySelector(".lista");
     const item = document.createElement("li");
+    const span = document.createElement("span");
     const botaoFechar = document.createElement("button");
-    const caracterDoBotao = document.createTextNode("✕");
     const task = tarefa.value.trim();
     if(task == ""){
         alert("digite uma tarefa...");
         return;
     }
 
-    item.textContent = task;
+    span.textContent = task;
 
-    lista.appendChild(item);
-    
+    botaoFechar.textContent = "✕";
+
+    item.appendChild(span);
     item.appendChild(botaoFechar);
-    
-    botaoFechar.appendChild(caracterDoBotao);
-    
+    lista.appendChild(item);
+
     botaoFechar.onclick = ()=>{
         item.remove();
     }

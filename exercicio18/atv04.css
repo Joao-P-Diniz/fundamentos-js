@@ -1,0 +1,11 @@
+.oculto {
+    display: none;
+}
+
+.visivel {
+    border: 3px solid green;
+}
+
+.aparecer {
+    background-color: yellow;
+}
