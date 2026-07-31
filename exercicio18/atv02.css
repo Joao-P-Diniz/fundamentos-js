@@ -1,0 +1,10 @@
+.destaque{
+    width:200px;
+    height:auto;
+    border:1px solid black;
+    padding:16px;
+    border-radius:8px;
+}
+.destaque img{
+    width:100%;
+}
